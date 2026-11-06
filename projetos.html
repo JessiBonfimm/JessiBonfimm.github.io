@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos | Jéssica Bonfim</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">Jéssica Bonfim</a>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="projetos.html" aria-current="page">Projetos</a>
+      <a href="contato.html">Contato</a>
+      <button id="tema" type="button" aria-label="Alternar tema claro e escuro">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="topo">
+      <div class="topo-int">
+        <div class="topo-texto">
+          <p class="saudacao">Trabalhos acadêmicos</p>
+          <h1>Projetos</h1>
+          <p class="resumo">Projetos desenvolvidos durante o curso, com a descrição de cada trabalho e as tecnologias utilizadas.</p>
+        </div>
+        <div class="moldura">
+          <img src="img/foto-web.jpg" alt="Foto de Jéssica Bonfim" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </section>
+
+    <section class="bloco">
+      <h2>Projetos acadêmicos</h2>
+      <div class="proj-lista">
+        <article class="proj">
+          <div class="proj-num">01</div>
+          <div class="proj-corpo">
+            <h3>S.O.S: Sistema Orçamentário Simplificado</h3>
+            <p>Trabalho de conclusão de curso: plataforma web de orçamentos para uma empresa de publicidade e comunicação visual, com controle de estoque e controle financeiro integrados.</p>
+            <ul class="tags"><li>TCC</li><li>Aplicação web</li></ul>
+            <div class="proj-links"><a class="botao pequeno" href="https://github.com/JessiBonfimm">Ver no GitHub</a></div>
+          </div>
+        </article>
+        <article class="proj">
+          <div class="proj-num">02</div>
+          <div class="proj-corpo">
+            <h3>Sistema para confeitarias</h3>
+            <p>Projeto em grupo da disciplina de Banco de Dados 2: sistema voltado para confeitarias, com modelagem de dados e uso de Oracle e PL/SQL.</p>
+            <ul class="tags"><li>Oracle</li><li>PL/SQL</li></ul>
+            <div class="proj-links"><a class="botao pequeno" href="https://github.com/JessiBonfimm">Ver no GitHub</a></div>
+          </div>
+        </article>
+        <!-- fim-projetos -->
+      </div>
+    </section>
+
+    <section class="bloco">
+      <h2>Áudio</h2>
+          <div class="player">
+            <audio src="media/audio.mp3" preload="metadata"></audio>
+            <div class="controles">
+              <button type="button" data-acao="voltar">⏪</button>
+              <button type="button" data-acao="tocar">▶</button>
+              <button type="button" data-acao="pausar">⏸</button>
+              <button type="button" data-acao="avancar">⏩</button>
+              <label>Volume
+                <input type="range" min="0" max="1" step="0.05" value="1" data-acao="volume">
+              </label>
+            </div>
+          </div>
+      <h2>Vídeo</h2>
+          <div class="player">
+            <video src="media/video.mp4" preload="metadata" playsinline></video>
+            <div class="controles">
+              <button type="button" data-acao="voltar">⏪</button>
+              <button type="button" data-acao="tocar">▶</button>
+              <button type="button" data-acao="pausar">⏸</button>
+              <button type="button" data-acao="avancar">⏩</button>
+              <label>Volume
+                <input type="range" min="0" max="1" step="0.05" value="1" data-acao="volume">
+              </label>
+            </div>
+          </div>
+    </section>
+
+    <section class="bloco chamada">
+      <h2>Entre em contato</h2>
+      <p>Se quiser saber mais sobre algum projeto ou tirar dúvidas, envie uma mensagem.</p>
+      <a class="botao" href="contato.html">Enviar mensagem</a>
+    </section>
+  </main>
+
+  <footer>© 2026 Jéssica Bonfim</footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
