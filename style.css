@@ -517,3 +517,19 @@ footer {
 .topo-texto .resumo + .resumo { margin-top: -10px !important; }
 /* fim-intervalo-topo-3 */
 
+
+/* ===== Foto igual em todas as paginas ===== */
+.topo-int { grid-template-columns: 1.3fr 1fr; align-items: center; }
+.topo-int > .moldura {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 4 / 5;
+  justify-self: center;
+  align-self: center;
+}
+.topo-int > .moldura img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+@media (max-width: 760px) {
+  .topo-int { grid-template-columns: 1fr; }
+  .topo-int > .moldura { max-width: 260px; order: -1; }
+}
+/* fim-foto-igual */
