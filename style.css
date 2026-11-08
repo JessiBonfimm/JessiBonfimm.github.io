@@ -503,3 +503,8 @@ footer {
 .contato-grid { align-items: start; }
 .contato-grid form { margin-top: 0; }
 /* fim-alinhamento-contato */
+
+/* ===== Intervalo menor entre os paragrafos do topo ===== */
+.topo-int.simples .resumo { margin-bottom: 0; }
+.topo-int.simples .resumo + .resumo { margin-top: 14px; }
+/* fim-intervalo-topo */
