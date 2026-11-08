@@ -514,5 +514,6 @@ footer {
 
 
 /* ===== Intervalo entre os paragrafos do topo (v3) ===== */
-.topo-texto .resumo + .resumo { margin-top: -18px !important; }
+.topo-texto .resumo + .resumo { margin-top: -10px !important; }
 /* fim-intervalo-topo-3 */
+
