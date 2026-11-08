@@ -512,3 +512,7 @@ footer {
 
 
 
+
+/* ===== Intervalo entre os paragrafos do topo (v3) ===== */
+.topo-texto .resumo + .resumo { margin-top: -18px !important; }
+/* fim-intervalo-topo-3 */
