@@ -533,3 +533,7 @@ footer {
   .topo-int > .moldura { max-width: 260px; order: -1; }
 }
 /* fim-foto-igual */
+
+/* ===== Foto na mesma altura da pagina Inicio ===== */
+.topo-int > .moldura { align-self: start !important; margin-top: 0 !important; }
+/* fim-foto-inicio */
