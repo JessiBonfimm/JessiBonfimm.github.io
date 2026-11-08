@@ -537,3 +537,19 @@ footer {
 /* ===== Foto na mesma altura da pagina Inicio ===== */
 .topo-int > .moldura { align-self: start !important; margin-top: 0 !important; }
 /* fim-foto-inicio */
+
+/* ===== Foto no padrao da pagina Inicio (fixo) ===== */
+.topo-int { align-items: start !important; padding-top: 80px !important; padding-bottom: 80px !important; }
+.topo-int > .moldura {
+  align-self: start !important;
+  justify-self: center !important;
+  margin: 0 !important;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 4 / 5;
+}
+.topo-texto > :first-child { margin-top: 0 !important; }
+@media (max-width: 760px) {
+  .topo-int { padding-top: 48px !important; padding-bottom: 48px !important; }
+}
+/* fim-foto-padrao-inicio */
