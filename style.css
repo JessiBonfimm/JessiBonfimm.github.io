@@ -553,3 +553,34 @@ footer {
   .topo-int { padding-top: 48px !important; padding-bottom: 48px !important; }
 }
 /* fim-foto-padrao-inicio */
+
+/* Ajuste do título da página de contato */
+.topo h1.titulo-contato {
+    font-size: clamp(2.5rem, 6vw, 4.2rem);
+    line-height: 1.1;
+    max-width: 100%;
+}
+
+
+/* Ajuste definitivo do título da página de contato */
+.topo h1.titulo-contato {
+    font-size: clamp(2.2rem, 4.5vw, 3.5rem) !important;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .topo h1.titulo-contato {
+        white-space: normal;
+    }
+}
+
+
+/* Tamanho final do título de contato */
+.topo h1.titulo-contato {
+    font-size: clamp(1.8rem, 5.3vw, 4rem) !important;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+
