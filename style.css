@@ -606,3 +606,145 @@ footer {
     margin-bottom: 30px !important;
 }
 
+
+/* ===== Organização visual da página de projetos ===== */
+
+/* Aproveita melhor a largura da página */
+.secao-projetos {
+    max-width: 1180px;
+}
+
+/* Espaçamento entre os cartões */
+.secao-projetos .proj-lista {
+    gap: 32px;
+}
+
+/* Mais espaço interno nos cartões */
+.secao-projetos .proj {
+    padding: 36px;
+}
+
+/* Tecnologias com maior destaque */
+.secao-projetos .tags li {
+    background: var(--fundo);
+    border: 1px solid var(--lilas);
+    color: var(--texto);
+    font-weight: 600;
+    padding: 7px 16px;
+}
+
+/* Separação entre projetos e mídias */
+.secao-midias {
+    border-top: 1px solid var(--borda);
+    margin-top: 24px;
+    padding-top: 72px;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 700px) {
+    .secao-projetos .proj {
+        padding: 24px;
+    }
+
+    .secao-midias {
+        padding-top: 48px;
+    }
+}
+
+
+/* ===== Cabeçalhos e controles aprimorados de áudio e vídeo ===== */
+
+.midia-cabecalho {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    align-items: center;
+    column-gap: 14px;
+    margin-bottom: 18px;
+}
+
+.midia-icone {
+    grid-row: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: var(--agua);
+    color: var(--texto);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.midia-cabecalho h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.midia-cabecalho p {
+    margin: 4px 0 0;
+    color: var(--suave);
+    font-size: .95rem;
+}
+
+.midia-cabecalho-video {
+    margin-top: 42px;
+}
+
+.player-audio {
+    background: linear-gradient(135deg, var(--card), var(--fundo));
+}
+
+.player-video video {
+    background: #171421;
+}
+
+.progresso-midia {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 22px;
+}
+
+.progresso-midia span {
+    min-width: 38px;
+    color: var(--suave);
+    font-size: .85rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.player .progresso-midia input[type="range"] {
+    flex: 1;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .midia-cabecalho {
+        grid-template-columns: 42px 1fr;
+        column-gap: 12px;
+    }
+
+    .midia-icone {
+        width: 42px;
+        height: 42px;
+        font-size: 22px;
+    }
+
+    .midia-cabecalho h2 {
+        font-size: 1.3rem;
+    }
+
+    .midia-cabecalho p {
+        font-size: .85rem;
+    }
+
+    .midia-cabecalho-video {
+        margin-top: 32px;
+    }
+
+    .progresso-midia {
+        gap: 8px;
+    }
+}

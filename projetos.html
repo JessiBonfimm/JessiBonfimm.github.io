@@ -34,7 +34,7 @@
       </div>
     </section>
 
-    <section class="bloco">
+    <section class="bloco secao-projetos">
       <h2 class="titulo-secao-projetos">Projetos acadêmicos</h2>
       <div class="proj-lista">
         <article class="proj">
@@ -59,33 +59,58 @@
       </div>
     </section>
 
-    <section class="bloco">
-      <h2>Áudio</h2>
-          <div class="player">
-            <audio src="media/audio.mp3" preload="metadata"></audio>
-            <div class="controles">
-              <button type="button" data-acao="voltar">⏪</button>
-              <button type="button" data-acao="tocar">▶</button>
-              <button type="button" data-acao="pausar">⏸</button>
-              <button type="button" data-acao="avancar">⏩</button>
-              <label>Volume
-                <input type="range" min="0" max="1" step="0.05" value="1" data-acao="volume">
-              </label>
-            </div>
-          </div>
-      <h2>Vídeo</h2>
-          <div class="player">
-            <video src="media/video.mp4" preload="metadata" playsinline></video>
-            <div class="controles">
-              <button type="button" data-acao="voltar">⏪</button>
-              <button type="button" data-acao="tocar">▶</button>
-              <button type="button" data-acao="pausar">⏸</button>
-              <button type="button" data-acao="avancar">⏩</button>
-              <label>Volume
-                <input type="range" min="0" max="1" step="0.05" value="1" data-acao="volume">
-              </label>
-            </div>
-          </div>
+        <section class="bloco secao-midias">
+      <div class="midia-cabecalho">
+        <span class="midia-icone">♫</span>
+        <h2>Áudio</h2>
+        <p>Uma apresentação em áudio para complementar meu portfólio.</p>
+      </div>
+
+      <div class="player player-audio">
+        <audio src="media/audio.mp3" preload="metadata"></audio>
+
+        <div class="controles">
+          <button type="button" data-acao="voltar" aria-label="Voltar 5 segundos">⏪</button>
+          <button type="button" data-acao="tocar" aria-label="Reproduzir">▶</button>
+          <button type="button" data-acao="pausar" aria-label="Pausar">⏸</button>
+          <button type="button" data-acao="avancar" aria-label="Avançar 5 segundos">⏩</button>
+          <label>Volume
+            <input type="range" min="0" max="1" step="0.05" value="1" data-acao="volume">
+          </label>
+        </div>
+
+        <div class="progresso-midia">
+          <span class="tempo-atual">0:00</span>
+          <input type="range" min="0" max="100" step="0.1" value="0" data-acao="progresso" aria-label="Progresso do áudio">
+          <span class="duracao-midia">0:00</span>
+        </div>
+      </div>
+
+      <div class="midia-cabecalho midia-cabecalho-video">
+        <span class="midia-icone">▷</span>
+        <h2>Vídeo</h2>
+        <p>Confira uma apresentação visual do meu trabalho.</p>
+      </div>
+
+      <div class="player player-video">
+        <video src="media/video.mp4" preload="metadata" playsinline></video>
+
+        <div class="controles">
+          <button type="button" data-acao="voltar" aria-label="Voltar 5 segundos">⏪</button>
+          <button type="button" data-acao="tocar" aria-label="Reproduzir">▶</button>
+          <button type="button" data-acao="pausar" aria-label="Pausar">⏸</button>
+          <button type="button" data-acao="avancar" aria-label="Avançar 5 segundos">⏩</button>
+          <label>Volume
+            <input type="range" min="0" max="1" step="0.05" value="1" data-acao="volume">
+          </label>
+        </div>
+
+        <div class="progresso-midia">
+          <span class="tempo-atual">0:00</span>
+          <input type="range" min="0" max="100" step="0.1" value="0" data-acao="progresso" aria-label="Progresso do vídeo">
+          <span class="duracao-midia">0:00</span>
+        </div>
+      </div>
     </section>
 
     <section class="bloco chamada">
@@ -99,6 +124,9 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
 
 
 
