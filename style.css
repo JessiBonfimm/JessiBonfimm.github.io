@@ -584,3 +584,25 @@ footer {
 }
 
 
+
+/* Padronização do título da página de projetos */
+.topo h1.titulo-projetos {
+    font-size: clamp(1.8rem, 5.3vw, 4rem) !important;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+
+/* Espaçamento do título Projetos acadêmicos */
+.titulo-secao-projetos {
+    margin-bottom: 30px !important;
+}
+
+
+/* Padronização do título Projetos acadêmicos */
+.titulo-secao-projetos {
+    font-size: clamp(1.8rem, 5.3vw, 4rem) !important;
+    line-height: 1.1;
+    margin-bottom: 30px !important;
+}
+
