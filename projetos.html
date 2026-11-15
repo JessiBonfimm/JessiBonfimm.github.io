@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
@@ -55,6 +55,20 @@
             <div class="proj-links"><a class="botao pequeno" href="https://github.com/JessiBonfimm">Ver no GitHub</a></div>
           </div>
         </article>
+
+        <article class="proj">
+          <div class="proj-num">03</div>
+          <div class="proj-corpo">
+            <h3>Jogo Web</h3>
+            <p>Espaço reservado para um jogo web em planejamento. Em breve, este cartão será atualizado com os detalhes do projeto e o link para acessar.</p>
+            <ul class="tags">
+            <li>JavaScript</li>
+            <li>Jogo web</li>
+            <li>Em breve</li>
+          </ul>
+            <div class="proj-links"><span class="botao pequeno em-breve" aria-disabled="true">Em breve</span></div>
+          </div>
+        </article>
         <!-- fim-projetos -->
       </div>
     </section>
@@ -88,7 +102,7 @@
 
       <div class="midia-cabecalho midia-cabecalho-video">
         <span class="midia-icone">▷</span>
-        <h2>Vídeo</h2>
+        <h2>Vídeo 1</h2>
         <p>Confira uma apresentação visual do meu trabalho.</p>
       </div>
 
@@ -103,24 +117,72 @@
           <label>Volume
             <input type="range" min="0" max="1" step="0.05" value="1" data-acao="volume">
           </label>
+          <button type="button" data-acao="tela-cheia" aria-label="Tela cheia" title="Tela cheia">⛶</button>
         </div>
 
         <div class="progresso-midia">
           <span class="tempo-atual">0:00</span>
-          <input type="range" min="0" max="100" step="0.1" value="0" data-acao="progresso" aria-label="Progresso do vídeo">
+          <input type="range" min="0" max="100" step="0.1" value="0" data-acao="progresso" aria-label="Progresso do vídeo 1">
+          <span class="duracao-midia">0:00</span>
+        </div>
+      </div>
+
+      <div class="midia-cabecalho midia-cabecalho-video">
+        <span class="midia-icone">▷</span>
+        <h2>Vídeo 2</h2>
+        <p>Confira outra apresentação visual dos meus projetos.</p>
+      </div>
+
+      <div class="player player-video">
+        <video src="media/video2.mp4" preload="metadata" playsinline></video>
+
+        <div class="controles">
+          <button type="button" data-acao="voltar" aria-label="Voltar 5 segundos">⏪</button>
+          <button type="button" data-acao="tocar" aria-label="Reproduzir">▶</button>
+          <button type="button" data-acao="pausar" aria-label="Pausar">⏸</button>
+          <button type="button" data-acao="avancar" aria-label="Avançar 5 segundos">⏩</button>
+          <label>Volume
+            <input type="range" min="0" max="1" step="0.05" value="1" data-acao="volume">
+          </label>
+          <button type="button" data-acao="tela-cheia" aria-label="Tela cheia" title="Tela cheia">⛶</button>
+        </div>
+
+        <div class="progresso-midia">
+          <span class="tempo-atual">0:00</span>
+          <input type="range" min="0" max="100" step="0.1" value="0" data-acao="progresso" aria-label="Progresso do vídeo 2">
           <span class="duracao-midia">0:00</span>
         </div>
       </div>
     </section>
 
     <section class="bloco chamada">
+      <p class="saudacao">Vamos conversar?</p>
       <h2>Entre em contato</h2>
-      <p>Se quiser saber mais sobre algum projeto ou tirar dúvidas, envie uma mensagem.</p>
+      <p>Gostou de algum projeto ou quer saber mais sobre as demonstrações? Envie uma mensagem para conversarmos.</p>
       <a class="botao" href="contato.html">Enviar mensagem</a>
     </section>
   </main>
 
-  <footer>© 2026 Jéssica Bonfim</footer>
+  <footer>
+    <div class="rodape-int">
+      <div class="rodape-info">
+        <a class="logo" href="index.html">Jéssica Bonfim</a>
+        <p>Portfólio acadêmico · Desenvolvimento de Sistemas para Web — IFSP Birigui</p>
+      </div>
+      <nav class="rodape-nav" aria-label="Navegação do rodapé">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="projetos.html" aria-current="page">Projetos</a>
+        <a href="contato.html">Contato</a>
+        <a href="https://github.com/JessiBonfimm" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="voltar-topo" href="#">Topo ↑</a>
+      </nav>
+    </div>
+    <div class="rodape-base">
+      <span>© 2026 Jéssica Bonfim</span>
+      <span>IFSP · Campus Birigui</span>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

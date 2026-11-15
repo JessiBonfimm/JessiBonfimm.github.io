@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --fundo: #FAF8FD;
   --texto: #3B3350;
   --suave: #6B6285;
@@ -554,42 +554,17 @@ footer {
 }
 /* fim-foto-padrao-inicio */
 
-/* Ajuste do título da página de contato */
-.topo h1.titulo-contato {
-    font-size: clamp(2.5rem, 6vw, 4.2rem);
-    line-height: 1.1;
-    max-width: 100%;
-}
-
-
-/* Ajuste definitivo do título da página de contato */
-.topo h1.titulo-contato {
-    font-size: clamp(2.2rem, 4.5vw, 3.5rem) !important;
-    line-height: 1.1;
+/* Padronização unificada do título principal em todas as páginas */
+.topo h1 {
+    font-size: clamp(1.8rem, 5.3vw, 4rem) !important;
+    line-height: 1.1 !important;
     white-space: nowrap;
 }
 
 @media (max-width: 600px) {
-    .topo h1.titulo-contato {
+    .topo h1 {
         white-space: normal;
     }
-}
-
-
-/* Tamanho final do título de contato */
-.topo h1.titulo-contato {
-    font-size: clamp(1.8rem, 5.3vw, 4rem) !important;
-    line-height: 1.1;
-    white-space: nowrap;
-}
-
-
-
-/* Padronização do título da página de projetos */
-.topo h1.titulo-projetos {
-    font-size: clamp(1.8rem, 5.3vw, 4rem) !important;
-    line-height: 1.1;
-    white-space: nowrap;
 }
 
 
@@ -747,4 +722,281 @@ footer {
     .progresso-midia {
         gap: 8px;
     }
+}
+
+/* Vídeo em tela cheia sem cortes */
+.player video:fullscreen {
+    object-fit: contain;
+    border-radius: 0;
+    background: #000;
+}
+
+/* ===== Bloco de chamada refinado ===== */
+.bloco.chamada {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    width: min(1040px, calc(100% - 40px));
+    margin: 16px auto 64px;
+    padding: 48px 32px;
+    text-align: center;
+    border: 1px solid var(--borda);
+    border-top: 4px solid var(--lilas);
+    border-radius: 28px;
+    background:
+        radial-gradient(480px 260px at 90% 15%, var(--brilho-2), transparent 70%),
+        radial-gradient(520px 300px at 10% 90%, var(--brilho-1), transparent 70%),
+        var(--card);
+    box-shadow: 0 8px 26px rgba(123, 98, 184, .10);
+}
+.bloco.chamada .saudacao {
+    font-size: 1.35rem;
+    margin-bottom: 6px;
+}
+.bloco.chamada h2 {
+    margin: 0 0 12px;
+}
+.bloco.chamada p:not(.saudacao) {
+    color: var(--suave);
+    margin: 0 auto 28px;
+    max-width: 32em;
+}
+@media (max-width: 760px) {
+    .bloco.chamada {
+        margin: 8px auto 48px;
+        padding: 36px 22px;
+    }
+}
+/* ===== Rodapé padronizado com o cabeçalho ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+footer {
+    position: relative;
+    isolation: isolate;
+    text-align: left;
+    padding: 0;
+    border-top: 1px solid var(--borda);
+    background:
+        radial-gradient(600px 320px at 15% 85%, var(--brilho-2), transparent 70%),
+        radial-gradient(650px 360px at 88% 20%, var(--brilho-1), transparent 70%),
+        var(--card);
+    color: var(--suave);
+    font-size: .95rem;
+}
+
+.rodape-int {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 40px 32px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 24px 40px;
+}
+
+.rodape-info {
+    max-width: 380px;
+}
+
+.rodape-info p {
+    margin: 8px 0 0;
+    color: var(--suave);
+    font-size: .95rem;
+    line-height: 1.6;
+}
+
+.rodape-nav {
+    padding-top: 4px;
+}
+
+.rodape-nav .voltar-topo {
+    padding: 6px 14px;
+    border: 1px solid var(--borda);
+    border-radius: 999px;
+    background: var(--fundo);
+    color: var(--texto);
+    font-size: .88rem;
+    transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.rodape-nav .voltar-topo:hover {
+    background: var(--agua);
+    border-color: var(--agua);
+    color: #2A2240;
+    transform: translateY(-1px);
+}
+
+.rodape-base {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 18px 32px 28px;
+    border-top: 1px solid var(--borda);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    font-size: .88rem;
+    color: var(--suave);
+}
+
+@media (max-width: 700px) {
+    .rodape-int {
+        padding: 32px 20px 24px;
+    }
+
+    .rodape-base {
+        padding: 16px 20px 24px;
+    }
+}
+/* ===== Simetria e acabamento da pagina de contato ===== */
+.contato-grid {
+    align-items: stretch !important;
+}
+
+.contato-grid form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-grid textarea {
+    flex: 1;
+}
+
+.lateral {
+    height: 100%;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.contato-item {
+    height: 100%;
+}
+
+.contato-item .txt {
+    flex: 1;
+}
+
+.contato-item .seta {
+    color: var(--suave);
+    font-size: 1.1rem;
+    transition: transform .25s ease, color .25s ease;
+}
+
+.contato-item:hover .seta {
+    color: var(--lilas);
+    transform: translate(2px, -2px);
+}
+
+.contato-grid input:focus,
+.contato-grid textarea:focus {
+    outline: none;
+    border-color: var(--lilas);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--lilas) 22%, transparent);
+}
+/* ===== Acabamento da pagina Sobre ===== */
+.tags li {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.tags li::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--lilas);
+}
+
+.tags li:nth-child(even)::before {
+    background: var(--agua);
+}
+
+.tags li:hover {
+    transform: translateY(-2px);
+    border-color: var(--lilas);
+    box-shadow: 0 4px 12px rgba(123, 98, 184, .12);
+}
+
+.tres .card {
+    border-top: 4px solid var(--lilas);
+    border-radius: 22px;
+    box-shadow: 0 6px 20px rgba(123, 98, 184, .08);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.tres .card:nth-child(2) {
+    border-top-color: var(--agua);
+}
+
+.tres .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px rgba(123, 98, 184, .14);
+}
+/* ===== Acabamento dos projetos em destaque ===== */
+.dois .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 4px solid var(--lilas);
+    border-radius: 22px;
+    box-shadow: 0 6px 20px rgba(123, 98, 184, .08);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.dois .card:nth-child(2) {
+    border-top-color: var(--agua);
+}
+
+.dois .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px rgba(123, 98, 184, .14);
+}
+
+.dois .card p {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.dois .card .link-detalhes {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: auto;
+    padding: 8px 18px;
+    border: 1px solid var(--borda);
+    border-radius: 999px;
+    background: var(--fundo);
+    color: var(--texto);
+    text-decoration: none;
+    font-size: .92rem;
+    transition: background .2s ease, border-color .2s ease, color .2s ease, transform .2s ease;
+}
+
+.dois .card .link-detalhes:hover {
+    background: var(--lilas);
+    border-color: var(--lilas);
+    color: #fff;
+    transform: translateX(2px);
+}
+/* ===== Botao de projeto em planejamento ===== */
+.botao.em-breve {
+    background: var(--fundo);
+    color: var(--suave);
+    border: 1px dashed var(--borda);
+    box-shadow: none;
+    cursor: default;
+    user-select: none;
+}
+
+.botao.em-breve:hover {
+    background: var(--fundo);
+    color: var(--suave);
+    transform: none;
+    box-shadow: none;
 }

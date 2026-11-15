@@ -1,4 +1,4 @@
-﻿const botao = document.getElementById("tema");
+const botao = document.getElementById("tema");
 const raiz = document.documentElement;
 
 function aplicarTema(tema) {
@@ -58,6 +58,16 @@ document.querySelectorAll(".player").forEach((player) => {
 
   acao("volume")?.addEventListener("input", (e) => {
     midia.volume = Number(e.target.value);
+  });
+
+  acao("tela-cheia")?.addEventListener("click", () => {
+    if (document.fullscreenElement === midia) {
+      document.exitFullscreen?.();
+    } else if (midia.requestFullscreen) {
+      midia.requestFullscreen().catch(() => {});
+    } else if (midia.webkitEnterFullscreen) {
+      midia.webkitEnterFullscreen();
+    }
   });
 
   progresso?.addEventListener("input", () => {
