@@ -108,24 +108,14 @@
       </div>
 
       <div class="player player-video">
-        <video src="media/video.mp4" preload="metadata" playsinline></video>
-
-        <div class="controles">
-          <button type="button" data-acao="voltar" aria-label="Voltar 5 segundos">⏪</button>
-          <button type="button" data-acao="tocar" aria-label="Reproduzir">▶</button>
-          <button type="button" data-acao="pausar" aria-label="Pausar">⏸</button>
-          <button type="button" data-acao="avancar" aria-label="Avançar 5 segundos">⏩</button>
-          <label>Volume
-            <input type="range" min="0" max="1" step="0.05" value="1" data-acao="volume">
-          </label>
-          <button type="button" data-acao="tela-cheia" aria-label="Tela cheia" title="Tela cheia">⛶</button>
-        </div>
-
-        <div class="progresso-midia">
-          <span class="tempo-atual">0:00</span>
-          <input type="range" min="0" max="100" step="0.1" value="0" data-acao="progresso" aria-label="Progresso do vídeo 1">
-          <span class="duracao-midia">0:00</span>
-        </div>
+        <iframe
+          src="https://www.youtube.com/embed/ydWDrpGsYIk"
+          title="Vídeo 1 - Apresentação do projeto"
+          style="width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 12px; display: block;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
       </div>
 
       <div class="midia-cabecalho midia-cabecalho-video">
